@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderCont = styled.div`
   display: flex;
   align-items: center;
-  padding: 0 5%;
+padding: 0 5%;
   height: 10vh;
 `;
 
@@ -32,12 +32,21 @@ export const HeaderNav = styled.div`
   ul {
     display: flex;
     align-items: center;
-    margin-left: 20px;
+   
   }
+
+  .nav li {
+margin-right: 20px;
+  }
+
+  .user_info  li{
+      margin-left: 20px;
+  }
+
   ul li {
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    
   }
 
   .user_info img {
@@ -53,35 +62,32 @@ export const HeaderNav = styled.div`
     border-radius: 5px;
   }
 
+ 
+
   @media (max-width: 900px) {
     justify-content: space-between;
     margin-left: 0;
-
+    width: 100%;
     .toggle {
       display: block;
-      
     }
 
-    .all {
-      display: none;
-    }
 
   
 
     ul li {
       display: inline-block;
-      margin-left: 20px;
     }
 
  
 
     .user_info .cta {
       padding: 4px 10px;
-
+        font-size: 15px;
     }
 
     .all {
-      display: block;
+      display: inline-block;
     }
 
     .gmail {
@@ -90,7 +96,6 @@ export const HeaderNav = styled.div`
   }
 `;
 
-export const SideNav = styled.div``;
 
 export const SideNavCont = styled.div`
   width: auto;
@@ -98,10 +103,13 @@ export const SideNavCont = styled.div`
   padding: 30px 20px;
   position: fixed;
   top: 0;
-  left: 0;
-  display: none;
+  left: -100vw;
+  background: #f4f4f4;
+  transition: .5s;
 
-  background: #5c5b5b8f;
+&.active {
+    left: 0;
+}
 
   .logo {
     width: 80px;

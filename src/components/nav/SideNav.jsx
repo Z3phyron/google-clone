@@ -54,17 +54,17 @@ const Links = [
   },
 ];
 
-const SideNav = () => {
+const SideNav = ({toggle, handleClick}) => {
   return (
-    <SideNavCont>
+    <SideNavCont className={toggle ? "active" : ""}>
       <div className="logo">
-        <img src={logo} alt="" />
+        <img src={logo} alt="" onClick={handleClick} />
       </div>
 
       <ul className="links">
         {Links.map((el) => (
           <li>
-            <Link to="/">
+            <Link to="/" onClick={handleClick}>
               <span className="icon">{el.icon}</span>
               <span className="title">{el.title}</span>
             </Link>

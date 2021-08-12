@@ -1,22 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { HeaderCont, HeaderNav } from "../../assets/style/styled";
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import ninedots from "../../assets/images/nine-dots.png";
 import SideNav from "./SideNav";
 
-const Header = () => {
+const Header = (props) => {
+
+    const [toggle, setToggle] = useState(false)
+
+    const handleClick = () => {
+        setToggle(!toggle)
+    }
   return (
     <HeaderCont>
-      <SideNav className="sidenav" />
+          <SideNav toggle={toggle} handleClick={ handleClick }/>
       
 
       <HeaderNav>
        
           
-              <ul>
-                  <li>
-                      <FiMenu className="toggle" />
+              <ul className='nav'>
+                  <li className="toggle" >
+                      <FiMenu onClick={ handleClick }/>
                   </li>
             <li className="all">
               <Link to="/">
