@@ -3,7 +3,7 @@ import { FiHome } from "react-icons/fi";
 import { BiHistory } from "react-icons/bi";
 import { BsFillBookmarksFill } from "react-icons/bs";
 import { CgPlayListSearch } from "react-icons/cg";
-import { IoMdHelp, IoSettingsSharp } from "react-icons/io";
+import { IoMdHelp } from "react-icons/io";
 import { RiShieldUserFill } from "react-icons/ri";
 import { BiHide } from "react-icons/bi";
 import { HiDocumentSearch } from "react-icons/hi";
