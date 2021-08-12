@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderCont, HeaderNav, HeaderToggle } from "../../assets/style/styled";
+import { HeaderCont, HeaderNav } from "../../assets/style/styled";
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import ninedots from "../../assets/images/nine-dots.png";
