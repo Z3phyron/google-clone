@@ -7,20 +7,17 @@ export const HeaderCont = styled.div`
   height: 10vh;
 `;
 
-export const HeaderToggle = styled.div`
-  display: none;
-  font-size: 20px;
 
-  @media (max-width: 900px) {
-      display: block;
-  }
-`;
 
 export const HeaderNav = styled.div`
   margin-left: auto;
-display: flex;
-width: 80%;
+  display: flex;
   align-items: center;
+
+  .toggle {
+    display: none;
+    font-size: 20px;
+  }
 
   .all {
     display: none;
@@ -59,16 +56,46 @@ width: 80%;
   @media (max-width: 900px) {
     justify-content: space-between;
     margin-left: 0;
+
+    .toggle {
+      display: block;
+      
+    }
+
+    .all {
+      display: none;
+    }
+
+  
+
+    ul li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+ 
+
+    .user_info .cta {
+      padding: 4px 10px;
+
+    }
+
+    .all {
+      display: block;
+    }
+
+    .gmail {
+      display: none;
+    }
   }
 `;
 
 export const SideNav = styled.div``;
 
-
 export const SideNavCont = styled.div`
   width: auto;
   height: 100%;
-  padding:30px 20px;
+  padding: 30px 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -86,19 +113,19 @@ export const SideNavCont = styled.div`
   }
 
   .links li {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
 
-      a {
-          color: #333;
-          font-size: 18px;
-          font-weight: 500;
-          display: flex;
-          align-items: center;
+    a {
+      color: #333;
+      font-size: 18px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
 
-          .icon {
-              margin-right: 10px;
-                font-size: 20px;
-          }
+      .icon {
+        margin-right: 10px;
+        font-size: 20px;
       }
+    }
   }
 `;
