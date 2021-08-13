@@ -137,3 +137,158 @@ export const SideNavCont = styled.div`
     }
   }
 `;
+
+
+export const HomeCont = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  padding: 5%;
+
+  .logo {
+    width: 250px;
+    margin-bottom: 5vh;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .lang_offered {
+    margin-top: 20px;
+    a {
+      font-size: 14px;
+      margin: 0 5px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .logo {
+      width: 150px;
+    }
+
+    .lang_offered {
+      margin-top: 15px;
+      font-size: 10px;
+      a {
+        font-size: 8px;
+        margin: 0 5px;
+      }
+    }
+  }
+`;
+export const SearchCont = styled.div`
+width: 40%;
+margin:0 auto;
+
+@media (max-width: 900px) {
+  width: 90%;
+}
+`;
+export const SearchInput = styled.div`
+border: 1px solid #d1cece6a;
+display: flex;
+align-items: center;
+padding: 5px 12px;
+border-radius: 50px;
+
+
+input  {
+  flex: 1;
+  padding: 7px 10px;
+  margin: 0 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search_icon {
+  font-size: 20px;
+  color: #333333a6;
+}
+
+img {
+  width: 15px;
+}
+`;
+export const SearchBtn = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 5vh;
+
+button {
+  margin: 0 30px;
+  padding: 10px 25px;
+  border: none;
+  background: #e6e6e6;
+  border-radius: 5px;
+
+  &:hover {
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
+    
+
+  }
+}
+
+@media (max-width: 900px) {
+
+  button {
+    padding: 7px 15px;
+    margin:0  10px;
+  }
+  
+}
+`;
+
+
+export const FooterCont = styled.div`
+background: #8c8b8b;
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+
+hr {
+  border: 1px solid #333;
+}
+
+.country {
+  padding: 0.6% 5%;
+}
+`;
+export const FooterLinks = styled.div`
+  padding: 0.6% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 12px;
+    margin-right: 3px;
+  }
+
+  a {
+    color: #222;
+  }
+
+  ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    .copyright {
+      display: none;
+    }
+
+    ul {
+      margin-bottom: 10px;
+    }
+  }
+`;
