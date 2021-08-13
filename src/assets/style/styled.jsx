@@ -82,7 +82,7 @@ margin-right: 20px;
  
 
     .user_info .cta {
-      padding: 4px 10px;
+      padding: 6px 13px;
         font-size: 15px;
     }
 
