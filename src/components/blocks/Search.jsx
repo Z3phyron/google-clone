@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { SearchBtn, SearchCont, SearchInput } from "../../assets/style/styled";
 import mic from "../../assets/images/g-mic.png";
-import { Link } from "react-router-dom";
+
 
 const Search = () => {
   const [input, setInput] = useState("");
