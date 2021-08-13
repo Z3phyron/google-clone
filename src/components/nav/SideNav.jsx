@@ -62,8 +62,8 @@ const SideNav = ({toggle, handleClick}) => {
       </div>
 
       <ul className="links">
-        {Links.map((el) => (
-          <li>
+        {Links.map((el, index) => (
+          <li key={index}>
             <Link to="/" onClick={handleClick}>
               <span className="icon">{el.icon}</span>
               <span className="title">{el.title}</span>

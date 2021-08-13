@@ -3,8 +3,12 @@ import styled from "styled-components";
 export const HeaderCont = styled.div`
   display: flex;
   align-items: center;
-padding: 0 5%;
+padding: 0 2%;
   height: 10vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 `;
 
 
@@ -25,7 +29,7 @@ export const HeaderNav = styled.div`
 
   a {
     color: #343434;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
   }
 
@@ -55,8 +59,8 @@ margin-right: 20px;
 
   .user_info .cta {
     padding: 8px 25px;
-    background: blue;
-    font-size: 17px;
+    background: #6161e1;
+    font-size: 12px;
     /* text-transform: uppercase; */
     color: #fff;
     border-radius: 5px;
@@ -83,7 +87,7 @@ margin-right: 20px;
 
     .user_info .cta {
       padding: 6px 13px;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .all {
@@ -144,12 +148,12 @@ export const HomeCont = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 80vh;
+  height: 60vh;
   padding: 5%;
 
   .logo {
-    width: 250px;
-    margin-bottom: 5vh;
+    width: 270px;
+    margin-bottom: 3vh;
 
     img {
       width: 100%;
@@ -158,8 +162,8 @@ export const HomeCont = styled.div`
 
   .lang_offered {
     margin-top: 20px;
+     font-size: 12px;
     a {
-      font-size: 14px;
       margin: 0 5px;
     }
   }
@@ -170,17 +174,15 @@ export const HomeCont = styled.div`
     }
 
     .lang_offered {
-      margin-top: 15px;
+      margin-top: 10px;
       font-size: 10px;
-      a {
-        font-size: 8px;
-        margin: 0 5px;
-      }
+
+
     }
   }
 `;
-export const SearchCont = styled.div`
-width: 40%;
+export const SearchCont = styled.form`
+width: 45%;
 margin:0 auto;
 
 @media (max-width: 900px) {
@@ -188,34 +190,40 @@ margin:0 auto;
 }
 `;
 export const SearchInput = styled.div`
-border: 1px solid #d1cece6a;
-display: flex;
-align-items: center;
-padding: 5px 12px;
-border-radius: 50px;
+  border: 1px solid #d1cece6a;
+  display: flex;
+  align-items: center;
+  
+  border-radius: 50px;
+  transition: .5s;
 
-
-input  {
-  flex: 1;
-  padding: 7px 10px;
-  margin: 0 5px;
-  border: none;
-  outline: none;
-  font-size: 16px;
-}
-
-.search_icon {
-  font-size: 20px;
-  color: #333333a6;
-
-  @media (max-width: 900px) {
-    font-size: 30px;
+  &:hover {
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
   }
-}
 
-img {
-  width: 15px;
-}
+  input {
+    flex: 1;
+    padding: 10px 2px;
+    margin: 5px 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .search_icon {
+    font-size: 20px;
+    color: #333333a6;
+    margin: 10px 15px;
+
+    @media (max-width: 900px) {
+      font-size: 30px;
+    }
+  }
+
+  img {
+    width: 15px;
+    margin: 10px 15px;
+  }
 `;
 export const SearchBtn = styled.div`
 display: flex;
@@ -224,10 +232,10 @@ align-items: center;
 margin-top: 5vh;
 
 button {
-  margin: 0 30px;
+  margin: 0 10px;
   padding: 10px 25px;
   border: none;
-  background: #e6e6e6;
+  background: #f7f7f7a9;
   border-radius: 5px;
 
   &:hover {
@@ -249,14 +257,15 @@ button {
 
 
 export const FooterCont = styled.div`
-background: #8c8b8b;
+background: #ededed;
 position: absolute;
 bottom: 0;
 left: 0;
 width: 100%;
+font-size: 12px;
 
 hr {
-  border: 1px solid #333;
+  border: 1px solid #d4d4d4;
 }
 
 .country {
