@@ -190,39 +190,46 @@ margin:0 auto;
 }
 `;
 export const SearchInput = styled.div`
-  border: 1px solid #d1cece6a;
-  display: flex;
-  align-items: center;
-  
-  border-radius: 50px;
-  transition: .5s;
 
-  &:hover {
-    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
-  }
+
+ position: relative;
 
   input {
-    flex: 1;
-    padding: 10px 2px;
-    margin: 5px 5px;
-    border: none;
-    outline: none;
-    font-size: 16px;
+  border-radius: 50px;
+  width: 100%;
+  transition: .5s;
+  flex: 1;
+  padding: 15px 45px;
+  margin: 5px 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+ border: 1px solid #d1cece6a;
+
+    &:hover {
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
+  }
   }
 
   .search_icon {
     font-size: 20px;
     color: #333333a6;
     margin: 10px 15px;
+    position: absolute;
+    top: 20%;
+    left: 5px;
 
     @media (max-width: 900px) {
-      font-size: 30px;
+      font-size: 20px;
     }
   }
 
   img {
     width: 15px;
     margin: 10px 15px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
   }
 `;
 export const SearchBtn = styled.div`
