@@ -207,6 +207,10 @@ input  {
 .search_icon {
   font-size: 20px;
   color: #333333a6;
+
+  @media (max-width: 900px) {
+    font-size: 30px;
+  }
 }
 
 img {
